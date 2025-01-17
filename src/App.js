@@ -1,13 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import logo from './logo.svg';
 import './App.css';
 import myImage from "./assets/unnamed (5).jpg";
-import { useState, useEffect } from 'react';
+import index from './index.css';
 
 function App() {
   return (
-    <div className="App" style={{ backgroundColor: "#B0C2E4" }}>
+    <div className="App" style={{ backgroundColor: "rgb(203, 213, 232)" }}>
       {/* Adding the Bootstrap CSS */}
       <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -16,7 +15,7 @@ function App() {
         crossOrigin="anonymous"
       />
       {/* Adding the Bootstrap JS */}
-      <div className="container-fluid" style={{ paddingTop: "20px", paddingBottom: "25px", background: "linear-gradient(to right, #061826, #3685B5)", color: "#f5f5f5"}}>
+      <div className="container-fluid" style={{ paddingTop: "20px", paddingBottom: "25px", background: "linear-gradient(to right, #061826, #3685B5)", color: "#f5f5f5" }}>
         <h1 className="text-center" style={{ fontFamily: "sans-serif", fontSize: "70px", paddingTop: "5px", fontWeight: "600", fontStretch: "120%" }}>Cameron Ryan</h1>
         <img src={myImage} className="image img-fluid" style={{ width: "300px", height: "auto", paddingBottom: "20px" }}></img>
         <h2 className="text-center">Second Year at Northeastern University</h2>
@@ -46,8 +45,72 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="container" style={{ paddingTop: "25px", background: "rgb(198, 162, 188)" }}>
-        <h1 className="text-start text-center" style={{ fontFamily: "sans-serif", fontWeight: "600", fontStretch: "120%" }}>PROJECTS </h1>
+      <div className="container" style={{ paddingTop: "25px", background: "rgb(198, 162, 188)", justifyContent: "center", alignItems: "center" }}>
+        <div className="row" style={{paddingTop: "25px", paddingBottom: "25px" }}>
+          <div className="col-4" style={{ justifyContent: "center", alignItems: "center" }}>
+            <div className="card" style={{ width: "18rem" }}>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/640px-Grosser_Panda.JPG"
+                className="card-img-top"
+                alt="Panda"
+              />
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+                <a href="#" className="btn btn-primary">
+                  Project Demo
+                </a>
+                <a href="#" className="btn btn-primary">
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-4">
+            <div className="card" style={{ width: "18rem" }}>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/640px-Grosser_Panda.JPG"
+                className="card-img-top"
+                alt="Panda"
+              />
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+                <a href="#" className="btn btn-primary">
+                  Project Demo
+                </a>
+                <a href="#" className="btn btn-primary">
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-4" style={{ justifyContent: "center", alignItems: "center" }}>
+            <div className="card" style={{ width: "18rem" }}>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/640px-Grosser_Panda.JPG"
+                className="card-img-top"
+                alt="Panda"
+              />
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+                <a href="#" className="btn btn-primary">
+                  Project Demo
+                </a>
+                <a href="#" className="btn btn-primary">
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
